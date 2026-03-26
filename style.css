@@ -17,7 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Background Texture */
 body::before {
     content: "";
     position: fixed;
@@ -28,7 +27,6 @@ body::before {
     z-index: 100;
 }
 
-/* Layout Containers */
 header,
 .gallery,
 .detail-nav,
@@ -38,7 +36,6 @@ header,
     padding: 4vw 8vw;
 }
 
-/* Gallery Styles */
 .gallery {
     column-count: 2;
     column-gap: 40px;
@@ -54,6 +51,7 @@ header,
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .photo-card.is-visible {
@@ -79,10 +77,8 @@ header,
     margin-top: 10px;
 }
 
-/* --- THE SEPARATE DARK FOOTER --- */
 .site-footer {
     background: var(--charcoal);
-    /* Distinct dark background */
     color: #999;
     padding: 5rem 8vw;
     margin-top: 10rem;
